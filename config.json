@@ -1,0 +1,12 @@
+{
+    "db" :{
+
+        "host" : "localhost",
+        "port" : "5432" ,
+        "username" : "postgres",
+        "password" : "waseem",
+        "database" : "TestDB",
+        "logging" : true,
+        "dialect" : "postgres"
+    }
+}
