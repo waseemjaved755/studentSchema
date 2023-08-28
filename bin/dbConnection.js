@@ -1,8 +1,8 @@
 const config= require("../config.json");
 
-const { sequelize } = require("sequelize");
+const { Sequelize } = require("sequelize");
 
-const db = new Sequelize(config.db);
+const database = new Sequelize(config.db);
 
 //then works like await
 db.authenticate().then(() =>
@@ -14,4 +14,4 @@ catch((error) =>
     console.log(error);
 }) ;
 
-module.exports = db;
+module.exports = database;

@@ -1,6 +1,7 @@
+const {Model , DataTypes} = require("sequelize");
 const sequelize = require("../../bin/dbConnection");
 
-const {Model , DataType} = require("suquelize");
+
 
 class StudentList extends Model {}
 
@@ -11,35 +12,35 @@ StudentList.init(
         id : {
             primaryKey : true,
             autoIncrement: true,
-            type : DataType.INTEGER,
+            type : DataTypes.INTEGER,
 
         },
         fname :
         {
           
             allowNull : false,
-            type : DataType.STRING,
+            type : DataTypes.STRING,
 
         },
         lname :
         {
           
             allowNull : false,
-            type : DataType.STRING,
+            type : DataTypes.STRING,
 
         },
         email:
         {
             unique : true,
             allowNull : false,
-            type : DataType.STRING,
+            type : DataTypes.STRING,
 
         },
         email:
         {
 
             allowNull : false,
-            type : DataType.STRING,
+            type : DataTypes.STRING,
 
         },
 

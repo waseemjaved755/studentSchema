@@ -1,21 +1,15 @@
-const dequelize = require("../bin/dbConnection");
-const { STRING} = require("sequelize");
+const sequelize = require("../bin/dbConnection");
+//const { STRING} = require("sequelize");
 
 
 //importing Models
-const {
-    StudentList
+const {StudentList} = require("./definitions/student");
 
-} = require("./definitions/student");
-
-const model = {StudentList};
 
 const db = {};
-
-sequelize.model = model ;
+const model = {StudentList};
+sequelize.model = model;
 db.sequelize=sequelize;
-
-
-module.export = { db , model};
+module.exports = { db , model};
 
 

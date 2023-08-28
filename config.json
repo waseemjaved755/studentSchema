@@ -5,7 +5,7 @@
         "port" : "5432" ,
         "username" : "postgres",
         "password" : "waseem",
-        "database" : "TestDB",
+        "database" : "studb",
         "logging" : true,
         "dialect" : "postgres"
     }
